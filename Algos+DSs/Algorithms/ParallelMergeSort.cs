@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Algorithms
 {
+    // TODO: Fix this troublesome garbage
     public static class ParallelMergeSort
     {
         public static List<int> Sort(int[] list)

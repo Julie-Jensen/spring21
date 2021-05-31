@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Algorithms
 {
+    // NB: From https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff963551(v=pandp.10)?redirectedfrom=MSDN
+    // I take no credit for this.
     public static class ParallelQuicksort
     {
         public static void Sort(int[] array, int from, int to, int depthRemaining)
         {
-            if (to - from <= 4)
+            if (to - from <= 1000)
             {
                 _ = Sorting.InsertionSort(array);
             }
