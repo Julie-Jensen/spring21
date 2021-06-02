@@ -58,7 +58,7 @@ namespace PathFinding
             float currShortest = -1f;
             int vertex = -1;
 
-            // This loop is the reason the runing time is quadratic.
+            // This loop is the reason the running time is quadratic.
             for (int i = 0; i < sptSet.Length; i++)
             {
                 if (!isVisited[i] && (sptSet[i].Item2 < currShortest || currShortest == -1f))
